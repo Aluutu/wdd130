@@ -18,7 +18,9 @@ body {
   color: #333;
 }
 
-header, main, footer {
+header,
+main,
+footer {
   max-width: 840px;
   margin: 0 auto;
 }
@@ -68,27 +70,31 @@ header, main, footer {
   width: 125px;
 }
 
-#about, #trips {
+#about,
+#trips {
   margin-top: 20px;
 }
 
-#about h2, #trips h2 {
+#about h2,
+#trips h2 {
   background-color: var(--primary-color);
   color: #fff;
   text-align: center;
   padding: 12px;
 }
 
-#about p, #trips p {
+#about p,
+#trips p {
   padding: 16px;
 }
+
 nav {
   margin: 16px;
   padding: 8px;
 }
 
 .socialmedia {
+  text-decoration: none;
   display: flex;
   gap: 12px;
 }
-
