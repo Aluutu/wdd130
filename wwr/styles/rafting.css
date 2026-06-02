@@ -1,75 +1,40 @@
 :root {
-  --primary-color: #2a9d8f;
-  --secondary-color: #e9c46a;
-  --accent1-color: #f4a261;
-  --accent2-color: #e76f51;
-  --heading-font: 'Arial', sans-serif;
-  --body-font: 'Helvetica', sans-serif;
+  --navy: #2a4a8b;
+  --navy-dark: #1f3a70;
+  --primary-color: #055a05;
+  --secondary-color: #f4a261;
+  --accent-color1: #264653;
+  --accent-color2: #e9c46a;
+  --display-font: 'Alfa Slab One', Georgia, serif;
+  --heading-font: 'Times New Roman', Georgia, serif;
+  --body-font: Helvetica, Arial, sans-serif;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+* { margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+  }
 
 body {
   font-family: var(--body-font);
-  color: #333;
+  color: var(--accent1-color);
 }
 
-header,
-main,
-footer {
-  max-width: 840px;
+header, main, footer {
+  width: 840px;
   margin: 0 auto;
 }
-.footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem;
-  margin-top: 2rem;
-  background-color: var(--primary-color);
-  color: white;
-}
-.logo img {
-  width: 120px;
-  height: auto;
-}
 
-.header {
-  display: grid;
-  grid-template-columns: 150px 1fr;
-  align-items: center;
-  /*justify-content: space-between;*/
-  background-color: var(--primary-color);
-  /*padding: 10px 20px;*/
-  padding: 1rem;
-  border-bottom: 4px solid var(--accent2-color);
-}
-/*ggggggg*/
-.nav ul {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  list-style: none;
-}
+header { 
+  background-color: none;
+  color: var(--accent2-color);
+ } 
 
-.nav a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  padding: 10px;
-}
-
-.nav a:hover {
-  background-color: var(--accent2-color);
-  border-radius: 5px;
-}
-/*hghghghghghg*/
+/* Hero */
 .hero {
   position: relative;
+  margin-top: 1rem;
+  overflow: hidden;
 }
 
 .hero-image {
@@ -81,100 +46,80 @@ footer {
 .hero h1 {
   position: absolute;
   top: 20px;
-  width: 100%;
+  left: 0;
+  right: 0;
   padding: 16px;
   text-align: center;
-  background-color: var(--accent1-color);
-  opacity: 0.7;
+  background-color: rgba(42, 74, 139, 0.7);
   color: #fff;
 }
 
 .hero article {
   position: absolute;
-  bottom: 20px;
-  left: 0;
-  right: 0;
-  margin: 0 16px;
-  padding: 16px;
-  background-color: rgba(42, 157, 143, 0.85);
+  left: 16px;
+  right: 16px;
+  bottom: 16px;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  padding: 1rem;
+  background-color: rgba(42, 74, 139, 0.88);
   color: #fff;
+}
+
+.hero article p {
+  flex: 1;
+  font-size: 0.95rem;
+  line-height: 1.5;
 }
 
 .hero article img {
-  float: right;
+ float: right;
   width: 125px;
-}
-.history {
-  display: grid;
-  grid-template-columns: 1fr 200px 1fr;
-  align-items: center;
-  gap: 1rem;
-  padding: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
 }
 
-.history img {
-  width: 100%;
-  border-radius: 10px;
+/* Section headings */
+#about, #trips {
+  margin-top: 2.5rem;
 }
 
-#about,
-#trips {
-  margin-top: 20px;
-}
-
-#about h2,
-#trips h2 {
-  background-color: var(--accent2-color);
-  color: #fff;
+h1, h2 {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
   text-align: center;
-  padding: 12px;
+  padding: 14px;
+  font-family: var(--heading-font);
+  font-weight: normal;
+  font-size: 1.5rem;
+  letter-spacing: 0.5px;
 }
 
-#about p,
-#trips p {
-  padding: 16px;
+#about p {
+  padding: 1.5rem 0;
+  line-height: 1.6;
 }
 
-nav {
-  margin: 16px;
-  padding: 8px;
-}
+/* Trips */
 .adventures {
-  display:  grid;
+  display: grid;
   grid-template-columns: repeat(5, 1fr);
-  justify-content: space-between;
   gap: 1rem;
-  padding: 1rem;
+  padding: 1.5rem 0;
 }
 
-figure {
-  border: thin silver solid;
-  display: flex;
-  flex-flow: column;
-  padding: 5px;
-  max-width: 150px;
-  margin: auto;
-  background-color: white;
+/* Footer */
+.footer {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
 }
 
-figure img {
-  width: 100%;
-  height: 100px;
-  object-fit: cover;
+.footer p {
+  font-size: 0.9rem;
+  color: #444;
+  margin-bottom: 0.75rem;
 }
 
-figcaption {
-  background-color: #222222;
-  color: white;
-  font: italic smaller sans-serif;
-  padding: 5px;
-  text-align: center;
-}
-.socialmedia {
-  display: flex;
-  gap: 10px;
-}
-.socialmedia img {
-  width: 35px;
-  height: 35px;
-}
+.socialmedia { text-decoration: none; }
+
