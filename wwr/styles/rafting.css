@@ -223,6 +223,7 @@ figcaption {
   margin-top: 2rem;
   background-color: var(--primary-color);
   color: white;
+}
 
 .footer p {
   font-size: 0.9rem;
