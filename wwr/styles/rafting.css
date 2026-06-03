@@ -1,5 +1,4 @@
 :root {
-  --navy-dark: #1f3a70;
   --primary-color: #055a05;
   --secondary-color: #f4a261;
   --accent-color1: #264653;
@@ -7,7 +6,6 @@
   --display-font: 'Alfa Slab One', Georgia, serif;
   --heading-font: 'Times New Roman', Georgia, serif;
   --body-font: Helvetica, Arial, sans-serif;
-  --border: #ddd;
 }
 
 * { 
@@ -163,10 +161,9 @@ h1, h2 {
 }
 
 /* ========== TRIPS / GALLERY SECTION - HORIZONTAL LAYOUT ========== */
-/* Container for all figures - makes them horizontal */
 .adventures {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);  /* 5 equal columns */
+  grid-template-columns: repeat(5, 1fr);
   gap: 1rem;
   padding: 1rem;
 }
