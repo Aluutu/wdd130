@@ -8,6 +8,7 @@
   --display-font: 'Alfa Slab One', Georgia, serif;
   --heading-font: 'Times New Roman', Georgia, serif;
   --body-font: Helvetica, Arial, sans-serif;
+  --border: #ddd;
 }
 
 * { margin: 0; 
@@ -17,7 +18,7 @@
 
 body {
   font-family: var(--body-font);
-  color: var(--accent1-color);
+  color: var(--accent-color1);
 }
 
 header, main, footer {
@@ -27,8 +28,31 @@ header, main, footer {
 
 header { 
   background-color: none;
-  color: var(--accent2-color);
+  color: var(--accent-color2);
  } 
+
+ nav a {
+  color: var(--navy-dark);
+  
+}
+
+nav a:hover {
+  color: var(--navy-dark);
+}
+
+.hero h1 {
+  font-family: var(--display-font);
+}
+
+.highlight {
+  background-color: var(--accent-color2);
+}
+
+.secondary-text {
+  color: var(--accent-color1);
+}
+
+
 
 /* Hero */
 .hero {
