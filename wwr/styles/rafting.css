@@ -121,5 +121,9 @@ h1, h2 {
   margin-bottom: 0.75rem;
 }
 
-.socialmedia { text-decoration: none; }
-
+.socialmedia { 
+  text-decoration: none; 
+}
+.socialmedia a{ 
+  text-decoration: none; 
+}
