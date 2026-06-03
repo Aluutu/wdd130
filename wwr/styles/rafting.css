@@ -10,10 +10,11 @@
   --border: #ddd;
 }
 
-* { margin: 0; 
-    padding: 0; 
-    box-sizing: border-box; 
-  }
+* { 
+  margin: 0; 
+  padding: 0; 
+  box-sizing: border-box; 
+}
 
 body {
   font-family: var(--body-font);
@@ -28,9 +29,9 @@ header, main, footer {
 header { 
   background-color: none;
   color: var(--accent-color2);
- } 
+} 
 
- /* ========== HEADER GRID LAYOUT =====1===== */
+/* ========== HEADER GRID LAYOUT =====1===== */
 .header {
   display: grid;
   grid-template-columns: 150px 1fr;
@@ -49,14 +50,7 @@ header {
   height: auto;
 }
 
-
 /* ========== NAVIGATION FLEX LAYOUT =====2===== */
-
-nav {
-  margin: 16px;
-  padding: 8px;
-}
-
 .nav ul {
   display: flex;
   list-style: none;
@@ -77,15 +71,6 @@ nav {
   border-radius: 5px;
 }
 
- nav a {
-  color: var(--navy-dark);
-  
-}
-
-nav a:hover {
-  color: var(--navy-dark);
-}
-
 .hero h1 {
   font-family: var(--display-font);
 }
@@ -97,8 +82,6 @@ nav a:hover {
 .secondary-text {
   color: var(--accent-color1);
 }
-
-
 
 /* Hero */
 .hero {
@@ -119,7 +102,7 @@ nav a:hover {
   width: 100%;
   padding: 16px;
   text-align: center;
-  background-color: var(--accent1-color);
+  background-color: var(--accent-color1);
   opacity: 0.7;
   color: #fff;
 }
@@ -142,7 +125,7 @@ nav a:hover {
 }
 
 .hero article img {
- float: right;
+  float: right;
   width: 125px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
 }
@@ -173,21 +156,19 @@ h1, h2 {
   font-family: var(--heading-font);
   font-weight: normal;
   font-size: 1.5rem;
-  
 }
 
 #about p, #trips p {
   padding: 16px;
-  
 }
 
-/* Trips */
+/* ========== TRIPS / GALLERY SECTION - HORIZONTAL LAYOUT ========== */
+/* Container for all figures - makes them horizontal */
 .adventures {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  justify-content: space-between;
+  grid-template-columns: repeat(5, 1fr);  /* 5 equal columns */
   gap: 1rem;
-  padding: 1rem ;
+  padding: 1rem;
 }
 
 figure {
@@ -195,8 +176,6 @@ figure {
   display: flex;
   flex-flow: column;
   padding: 5px;
-  max-width: 150px;
-  margin: auto;
   background-color: white;
 }
 
@@ -227,19 +206,20 @@ figcaption {
 
 .footer p {
   font-size: 0.9rem;
-  color: #444;
+  color: white;
   margin-bottom: 0.75rem;
 }
 
 .socialmedia { 
   text-decoration: none;
-   display: flex;
+  display: flex;
   gap: 10px; 
 }
-.socialmedia a{ 
+
+.socialmedia a { 
   text-decoration: none; 
 }
-}
+
 .socialmedia img {
   width: 35px;
   height: 35px;
