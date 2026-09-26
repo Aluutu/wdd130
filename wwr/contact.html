@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us | Rapids! Rafting Company</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header>
+    <div class="header">
+      <div class="logo">
+        <img src="images/logo.png" alt="Rapids! Rafting Company logo" />
+      </div>
+      <nav class="nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="trips.html">Trips</a></li>
+          <li><a href="contact.html" class="active">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Centered company info -->
+    <section class="company-header">
+      <h1>White Water Rafting Company</h1>
+      <p>123 Main River Street</p>
+      <p>Kolob, California</p>
+      <p>+1 999 999 9999</p>
+      <p><a href="mailto:info@whitewater.com">info@whitewater.com</a></p>
+    </section>
+
+    <!-- Map + Form two columns -->
+    <section class="contact-section">
+      <div class="map-container">
+        <iframe title="Company location map"
+          src="https://www.openstreetmap.org/export/embed.html?bbox=-119.0%2C37.0%2C-118.9%2C37.1&amp;layer=mapnik"
+          loading="lazy">
+        </iframe>
+      </div>
+
+      <form class="contact-form" action="#" method="post">
+        <div class="form-row">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Placeholder" required />
+        </div>
+
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Placeholder" required />
+        </div>
+
+        <div class="form-row">
+          <span class="form-label">Message<br />Purpose</span>
+          <div class="radio-group">
+            <label><input type="radio" name="purpose" value="general" checked /> General
+              Inquiry</label>
+            <label><input type="radio" name="purpose" value="reservation" /> Reservation
+              Question</label>
+            <label><input type="radio" name="purpose" value="suggestion" /> Website
+              Suggestion</label>
+          </div>
+        </div>
+
+        <div class="form-row form-row-stack">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Type here" rows="4"></textarea>
+        </div>
+
+        <div class="newsletter-check">
+          <label>
+            <input type="checkbox" name="newsletter" checked />
+            Please Subscribe me to the monthly newsletter
+          </label>
+        </div>
+
+        <button type="submit">Get in Touch!</button>
+      </form>
+    </section>
+
+    <!-- Employees -->
+    <section class="employees">
+      <h2>We Are Here to Serve You</h2>
+      <div class="employee-grid">
+        <figure>
+          <img src="images/sarah.jpg" alt="Sarah, Lead Guide" />
+          <figcaption>Employee Profile</figcaption>
+        </figure>
+        <figure>
+          <img src="images/mike.jpg" alt="Mike, Safety Expert" />
+          <figcaption>Employee Profile</figcaption>
+        </figure>
+        <figure>
+          <img src="images/lisa.jpg" alt="Lisa, River Specialist" />
+          <figcaption>Employee Profile</figcaption>
+        </figure>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer">
+      <p>Footer Content including Social Media Icons/Links</p>
+      <div class="socialmedia">
+        <a href="#"><img src="images/facebook.png" alt="Facebook" /></a>
+        <a href="#"><img src="images/instagram.png" alt="Instagram" /></a>
+        <a href="#"><img src="images/twitter.png" alt="Twitter" /></a>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
