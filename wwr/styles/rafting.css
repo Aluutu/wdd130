@@ -341,7 +341,6 @@ figcaption {
   min-height: 90px;
 }
 
-/* Radio group stacked */
 .radio-group {
   display: flex;
   flex-direction: column;
@@ -357,7 +356,6 @@ figcaption {
   cursor: pointer;
 }
 
-/* Newsletter checkbox */
 .newsletter-check {
   margin: 0.25rem 0 0;
 }
