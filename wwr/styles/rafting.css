@@ -77,6 +77,14 @@ header {
 
 .hero h1 {
   font-family: var(--display-font);
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  padding: 16px;
+  text-align: center;
+  background-color: var(--accent-color1);
+  opacity: 0.7;
+  color: #fff;
 }
 
 .highlight {
@@ -98,17 +106,6 @@ header {
   display: block;
   width: 100%;
   height: auto;
-}
-
-.hero h1 {
-  position: absolute;
-  top: 20px;
-  width: 100%;
-  padding: 16px;
-  text-align: center;
-  background-color: var(--accent-color1);
-  opacity: 0.7;
-  color: #fff;
 }
 
 .hero article {
