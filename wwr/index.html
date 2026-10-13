@@ -2,44 +2,100 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-      content="Contact Rapids! White Water Rafting Company — ask questions, make reservations, or send us your feedback." />
-    <meta name="author" content="Abraham Luutu" />
-    <link rel="stylesheet" href="styles/rafting.css">
-    <title>Home | Rapids!</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Rapids! White Water Rafting Company offers guided river adventures for all skill levels. Book a trip, meet our expert guides, and sign up for our newsletter.">
+  <meta name="author" content="Abraham Luutu">
+  <link rel="stylesheet" href="styles/rafting.css">
+  <title>Home | Rapids! Rafting Company</title>
 </head>
 
 <body>
-    <header class="header">
-        <div class="logo">
-            <a href="index.html">
-                <img src="images/logo.png" alt="Rapids! Rafting Company logo" width="120">
-            </a>
-        </div>
-        <nav class="nav">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="trips.html">Trips</a></li>
-                <li><a href="contact.html" class="active">Contact Us</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
+  <header class="header">
+    <div class="logo">
+      <a href="index.html">
+        <img src="images/logo.png" alt="Rapids! Rafting Company logo" width="120">
+      </a>
+    </div>
+    <nav class="nav">
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="trips.html">Trips</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    </main>
-    <footer class="footer">
-        <p>&copy; 2026 Rafting Company | Abraham Luutu</p>
-        <nav class="socialmedia">
-            <a href="https://facebook.com"><img src="images/facebook.png" alt="Facebook"
-                  width="40"></a>
-            <a href="https://twitter.com"><img src="images/twitter.png" alt="Twitter"
-                  width="40"></a>
-            <a href="https://instagram.com"><img src="images/instagram.png" alt="Instagram"
-                  width="40"></a>
-        </nav>
-    </footer>
+  <main>
+    <section class="home-hero">
+      <img class="hero-image" src="images/rafting_large.jpg"
+        alt="A rafting team paddling through white water rapids">
+      <div class="hero-overlay">
+        <h1>Ride the Rapids, Make Memories!</h1>
+        <p>Guided white water rafting adventures for families, thrill seekers, and
+          everyone in between.</p>
+        <a class="cta-button" href="trips.html">Explore Our Trips</a>
+      </div>
+    </section>
+
+    <section class="home-about">
+      <h2>Adventure Built on Experience</h2>
+      <p>For over 30 years, Rapids! has guided guests down some of the most beautiful
+        and exciting rivers in the region. As a family-owned company, we pair highly
+        trained river guides with top-quality equipment so every guest can enjoy a safe,
+        unforgettable day on the water.</p>
+    </section>
+
+    <section class="home-grid">
+      <article class="feature">
+        <img src="images/rafting4.jpg" alt="Professional river guide leading a raft through rapids">
+        <h3>Expert Guides</h3>
+        <p>Every raft is led by a certified guide who knows the river, the rapids, and
+          how to keep your adventure safe and fun from launch to landing.</p>
+      </article>
+      <article class="feature">
+        <img src="images/rafting2.jpg" alt="Rafters enjoying a scenic run on the river">
+        <h3>Trips for Every Level</h3>
+        <p>Choose from gentle family floats to adrenaline-charged Class V runs. From
+          half-day outings to overnight camp trips, there is a Rapids! adventure for you.</p>
+      </article>
+    </section>
+
+    <section class="home-cta">
+      <h2>Your Next Adventure Starts Here</h2>
+      <p>Browse our full line-up of trips, compare difficulty and pricing, then reserve
+        your spot today.</p>
+      <a class="cta-button" href="trips.html">View Trips and Pricing</a>
+    </section>
+
+    <section class="newsletter">
+      <h2>Join the Rapids! Newsletter</h2>
+      <p>Get trip announcements, seasonal specials, and river tips delivered to your inbox.</p>
+      <form class="newsletter-form" action="#" method="post">
+        <div class="form-row">
+          <label for="newsletter-name">Name</label>
+          <input type="text" id="newsletter-name" name="name" placeholder="Your name" required>
+        </div>
+        <div class="form-row">
+          <label for="newsletter-email">Email</label>
+          <input type="email" id="newsletter-email" name="email" placeholder="you@example.com"
+            required>
+        </div>
+        <button type="submit">Sign Me Up!</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 Rafting Company | Abraham Luutu</p>
+    <nav class="socialmedia">
+      <a href="https://facebook.com"><img src="images/facebook.png" alt="Facebook" width="40"></a>
+      <a href="https://twitter.com"><img src="images/twitter.png" alt="Twitter" width="40"></a>
+      <a href="https://instagram.com"><img src="images/instagram.png" alt="Instagram" width="40"></a>
+    </nav>
+  </footer>
 </body>
-</body>
+
+</html>
