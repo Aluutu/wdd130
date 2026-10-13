@@ -465,9 +465,7 @@ figcaption {
   }
 }
 
-/* ==========================================================
-   SHARED CALL-TO-ACTION BUTTON
-   ========================================================== */
+/* SHARED CALL-TO-ACTION BUTTON */
 .cta-button {
   display: inline-block;
   padding: 12px 26px;
@@ -486,9 +484,7 @@ figcaption {
   transform: translateY(-2px);
 }
 
-/* ==========================================================
-   HOME PAGE
-   ========================================================== */
+/* HOME PAGE */
 .home-hero {
   position: relative;
   margin-top: 1rem;
@@ -651,9 +647,7 @@ figcaption {
   background-color: var(--accent-color1);
 }
 
-/* ==========================================================
-   TRIPS PAGE
-   ========================================================== */
+/* TRIPS PAGE */
 .page-intro {
   margin-top: 1rem;
   padding: 0 1rem;
